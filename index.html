@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Flipkart Axis Bank Credit Card | Check Eligibility</title>
+
+  <meta name="description"
+        content="Check basic eligibility and explore benefits of the Flipkart Axis Bank Credit Card. Apply online subject to issuer eligibility and approval.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #14233d;
+      line-height: 1.5;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(920px, calc(100% - 24px));
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e4e9f0;
+      padding: 14px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 17px;
+      font-weight: 800;
+      color: #16427c;
+    }
+
+    .header-text {
+      font-size: 12px;
+      color: #68778c;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 22px 0 12px;
+    }
+
+    .hero-box {
+      background: linear-gradient(135deg, #062f69, #087bd7);
+      color: white;
+      border-radius: 22px;
+      padding: 34px 28px;
+      box-shadow: 0 12px 35px rgba(0, 45, 100, .15);
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: .9;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.05;
+      margin: 10px 0 14px;
+      max-width: 720px;
+    }
+
+    .yellow {
+      color: #ffd51a;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #eaf4ff;
+      font-size: 16px;
+      margin-bottom: 22px;
+    }
+
+    .main-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffd51a;
+      color: #123b77;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-weight: 900;
+      font-size: 17px;
+      box-shadow: 0 7px 20px rgba(0,0,0,.2);
+    }
+
+    .hero-note {
+      font-size: 11px;
+      margin-top: 10px;
+      opacity: .8;
+    }
+
+    /* TRUST */
+
+    .trust {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .trust-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 14px 8px;
+      text-align: center;
+    }
+
+    .trust-card strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .trust-card span {
+      font-size: 11px;
+      color: #6d7b8f;
+    }
+
+    /* SECTION */
+
+    .section {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 19px;
+      padding: 23px;
+      margin: 15px 0;
+      box-shadow: 0 5px 18px rgba(0,0,0,.035);
+    }
+
+    .section h2 {
+      color: #123d78;
+      font-size: 25px;
+      margin-bottom: 7px;
+    }
+
+    .section-intro {
+      color: #68778c;
+      font-size: 14px;
+      margin-bottom: 17px;
+    }
+
+    /* BENEFITS */
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px;
+    }
+
+    .benefit {
+      background: #f7faff;
+      border: 1px solid #e3ebf5;
+      border-radius: 14px;
+      padding: 15px;
+    }
+
+    .benefit-icon {
+      font-size: 23px;
+    }
+
+    .benefit strong {
+      display: block;
+      margin: 5px 0 3px;
+      font-size: 14px;
+    }
+
+    .benefit span {
+      font-size: 12px;
+      color: #66758a;
+    }
+
+    /* ELIGIBILITY */
+
+    .check-box {
+      background: #f7fbff;
+      border: 1px solid #dceafa;
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .question {
+      font-weight: 800;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 8px;
+      margin-bottom: 17px;
+    }
+
+    .option {
+      border: 1px solid #cdd9e7;
+      background: white;
+      border-radius: 11px;
+      padding: 12px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .option:hover {
+      border-color: #0874d3;
+    }
+
+    .option.selected {
+      background: #eaf5ff;
+      border-color: #0874d3;
+      color: #0759a9;
+    }
+
+    .result {
+      display: none;
+      border-radius: 12px;
+      padding: 13px;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+    .result.show {
+      display: block;
+    }
+
+    .result.good {
+      background: #eaf8f0;
+      color: #176a42;
+    }
+
+    .result.bad {
+      background: #fff5e8;
+      color: #8a5b00;
+    }
+
+    .apply-button {
+      display: none;
+      margin-top: 12px;
+    }
+
+    .apply-button.show {
+      display: block;
+    }
+
+    .apply-button a {
+      display: block;
+      text-align: center;
+      background: #0874d3;
+      color: white;
+      padding: 15px;
+      border-radius: 12px;
+      font-weight: 900;
+    }
+
+    /* STEPS */
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 10px;
+    }
+
+    .step {
+      background: #f7faff;
+      border: 1px solid #e3ebf5;
+      border-radius: 14px;
+      padding: 15px 9px;
+      text-align: center;
+    }
+
+    .number {
+      width: 32px;
+      height: 32px;
+      margin: auto auto 8px;
+      border-radius: 50%;
+      background: #0b4f99;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 900;
+    }
+
+    .step strong {
+      font-size: 13px;
+    }
+
+    .step p {
+      color: #68778c;
+      font-size: 11px;
+      margin-top: 5px;
+    }
+
+    /* CRITERIA */
+
+    .criteria {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .criteria-box {
+      background: #fafcff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .criteria-box h3 {
+      color: #17477f;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .criteria-box ul {
+      padding-left: 20px;
+    }
+
+    .criteria-box li {
+      font-size: 13px;
+      margin: 7px 0;
+    }
+
+    /* IMAGES */
+
+    .images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .images img {
+      width: 100%;
+      border-radius: 13px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* FAQ */
+
+    details {
+      border-bottom: 1px solid #e5eaf1;
+      padding: 14px 0;
+    }
+
+    details:last-child {
+      border-bottom: none;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    details p {
+      color: #68778c;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    /* DISCLAIMER */
+
+    .disclaimer {
+      color: #68778c;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+
+    /* STICKY CTA */
+
+    .sticky {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #062f69;
+      padding: 10px 12px;
+      z-index: 999;
+      box-shadow: 0 -5px 20px rgba(0,0,0,.15);
+    }
+
+    .sticky a {
+      display: block;
+      max-width: 650px;
+      margin: auto;
+      text-align: center;
+      background: #ffd51a;
+      color: #123b77;
+      padding: 14px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    footer {
+      padding: 25px 0 100px;
+      text-align: center;
+      color: #7b8797;
+      font-size: 11px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:650px) {
+
+      .container {
+        width: calc(100% - 16px);
+      }
+
+      .header-text {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 12px;
+      }
+
+      .hero-box {
+        padding: 25px 18px;
+        border-radius: 18px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .benefits,
+      .criteria,
+      .images {
+        grid-template-columns: 1fr;
+      }
+
+      .steps {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .section {
+        padding: 17px;
+      }
+
+      .section h2 {
+        font-size: 22px;
+      }
+    }
+
+    @media(max-width:390px) {
+
+      .trust-card strong {
+        font-size: 12px;
+      }
+
+      .trust-card span {
+        display: none;
+      }
+
+      .options {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="brand">Credit Card Eligibility</div>
+    <div class="header-text">Online application information</div>
+  </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="container">
+
+    <div class="hero-box">
+
+      <div class="eyebrow">
+        Flipkart Axis Bank Credit Card
+      </div>
+
+      <h1>
+        Shopping ke saath
+        <span class="yellow">more benefits</span>
+        explore karein.
+      </h1>
+
+      <p>
+        Card ke important benefits aur basic eligibility
+        simple language mein dekhiye. Criteria suitable lage
+        to online application continue kar sakte hain.
+      </p>
+
+      <a href="#eligibility" class="main-btn">
+        Check My Eligibility →
+      </a>
+
+      <div class="hero-note">
+        Approval guaranteed nahi hai. Final decision issuer ki
+        eligibility, verification aur credit policy par depend karta hai.
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<div class="container">
+
+
+<!-- TRUST -->
+
+<div class="trust">
+
+  <div class="trust-card">
+    <strong>📱 Online Process</strong>
+    <span>Application can continue online</span>
+  </div>
+
+  <div class="trust-card">
+    <strong>🔐 Verification</strong>
+    <span>KYC as required</span>
+  </div>
+
+  <div class="trust-card">
+    <strong>💳 Credit Card</strong>
+    <span>Subject to approval</span>
+  </div>
+
+</div>
+
+
+<!-- BENEFITS -->
+
+<section class="section">
+
+  <h2>Is card mein kya mil sakta hai?</h2>
+
+  <p class="section-intro">
+    Provided partner information ke according key benefits.
+    Current terms application page par verify karein.
+  </p>
+
+  <div class="benefits">
+
+    <div class="benefit">
+      <div class="benefit-icon">🛍️</div>
+      <strong>Flipkart & Cleartrip</strong>
+      <span>
+        Eligible spends par cashback benefits,
+        applicable terms ke subject to.
+      </span>
+    </div>
+
+    <div class="benefit">
+      <div class="benefit-icon">👗</div>
+      <strong>Myntra</strong>
+      <span>
+        Provided material mein 7.5% cashback category shown hai,
+        applicable limits aur terms ke subject to.
+      </span>
+    </div>
+
+    <div class="benefit">
+      <div class="benefit-icon">🍔</div>
+      <strong>Partner Spends</strong>
+      <span>
+        Selected partners par cashback benefits
+        as per current offer terms.
+      </span>
+    </div>
+
+    <div class="benefit">
+      <div class="benefit-icon">⛽</div>
+      <strong>Fuel Benefit</strong>
+      <span>
+        Fuel surcharge waiver as per applicable card terms.
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ELIGIBILITY -->
+
+<section class="section" id="eligibility">
+
+  <h2>30-second basic eligibility check</h2>
+
+  <p class="section-intro">
+    Yahan koi PAN, Aadhaar ya sensitive information enter
+    karne ki zarurat nahi hai.
+  </p>
+
+  <div class="check-box">
+
+    <!-- AGE -->
+
+    <p class="question">
+      1. Kya aapki age 21–60 years ke beech hai?
+    </p>
+
+    <div class="options" data-question="age">
+
+      <button class="option" data-value="yes">
+        Yes
+      </button>
+
+      <button class="option" data-value="no">
+        No
+      </button>
+
+    </div>
+
+
+    <!-- EMPLOYMENT -->
+
+    <p class="question">
+      2. Aapka employment type kya hai?
+    </p>
+
+    <div class="options" data-question="employment">
+
+      <button class="option" data-value="salaried">
+        Salaried
+      </button>
+
+      <button class="option" data-value="self">
+        Self-employed
+      </button>
+
+    </div>
+
+
+    <!-- INCOME -->
+
+    <p class="question">
+      3. Approx monthly income?
+    </p>
+
+    <div class="options" data-question="income">
+
+      <button class="option" data-value="15">
+        ₹15k–₹25k+
+      </button>
+
+      <button class="option" data-value="25">
+        ₹25k–₹30k+
+      </button>
+
+      <button class="option" data-value="30">
+        ₹30k+
+      </button>
+
+      <button class="option" data-value="low">
+        Below ₹15k
+      </button>
+
+    </div>
+
+
+    <div id="result" class="result"></div>
+
+
+    <div id="applyButton" class="apply-button">
+
+      <!-- YOUR GOMO REFERRAL LINK -->
+
+      <a
+        href="https://sales.gromo.in/ac/hCxUWHMdHF"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        Continue to Online Application →
+
+      </a>
+
+    </div>
+
+
+    <div class="disclaimer" style="margin-top:10px;">
+      This is only a basic pre-check, not an approval or
+      credit-score assessment.
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="section">
+
+  <h2>Application kaise chalega?</h2>
+
+  <div class="steps">
+
+    <div class="step">
+      <div class="number">1</div>
+      <strong>Basic Check</strong>
+      <p>Eligibility criteria review karein.</p>
+    </div>
+
+    <div class="step">
+      <div class="number">2</div>
+      <strong>Apply Online</strong>
+      <p>Required details submit karein.</p>
+    </div>
+
+    <div class="step">
+      <div class="number">3</div>
+      <strong>KYC</strong>
+      <p>Required verification complete karein.</p>
+    </div>
+
+    <div class="step">
+      <div class="number">4</div>
+      <strong>Verification</strong>
+      <p>Issuer details verify karega.</p>
+    </div>
+
+    <div class="step">
+      <div class="number">5</div>
+      <strong>Decision</strong>
+      <p>Approval issuer policy ke according.</p>
+    </div>
+
+    <div class="step">
+      <div class="number">6</div>
+      <strong>Card Delivery</strong>
+      <p>Approved hone par delivery process.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CRITERIA -->
+
+<section class="section">
+
+  <h2>Basic eligibility criteria</h2>
+
+  <div class="criteria">
+
+    <div class="criteria-box">
+
+      <h3>👤 Who may qualify?</h3>
+
+      <ul>
+
+        <li>
+          Age: <b>21–60 years</b>
+        </li>
+
+        <li>
+          Salaried + good credit score:
+          income above ₹15,000/month
+        </li>
+
+        <li>
+          Salaried + zero credit score:
+          income above ₹25,000/month
+        </li>
+
+        <li>
+          Self-employed + good credit score:
+          income above ₹30,000/month
+        </li>
+
+        <li>
+          Self-employed + zero credit history:
+          not allowed as per provided material
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <div class="criteria-box">
+
+      <h3>📄 Documents / verification</h3>
+
+      <ul>
+
+        <li>PAN</li>
+
+        <li>Aadhaar</li>
+
+        <li>Income proof where required</li>
+
+        <li>Video KYC / other verification</li>
+
+        <li>
+          Provided material states customer should be
+          within 50 km of Aadhaar or communication address
+          during Video KYC.
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- USER PROVIDED DETAILS -->
+
+<section class="section">
+
+  <h2>Benefits & eligibility details</h2>
+
+  <p class="section-intro">
+    Ye partner information material hai jo aapne provide kiya hai.
+  </p>
+
+  <div class="images">
+
+    <img
+      src="benefits.jpg"
+      alt="Flipkart Axis Bank credit card benefits">
+
+    <img
+      src="eligibility.jpg"
+      alt="Flipkart Axis Bank credit card eligibility">
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="section">
+
+  <h2>Common questions</h2>
+
+  <details>
+
+    <summary>
+      Kya card approval guaranteed hai?
+    </summary>
+
+    <p>
+      Nahi. Final approval issuer ki eligibility,
+      verification aur credit policy par depend karta hai.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Kya mujhe yahan PAN/Aadhaar dena hoga?
+    </summary>
+
+    <p>
+      Nahi. Is landing page par personal documents collect
+      nahi kiye ja rahe. Application continue karne par
+      required information application flow mein maangi
+      ja sakti hai.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Cashback aur fees same rahengi?
+    </summary>
+
+    <p>
+      Offers, fees, cashback rates aur limits change ho sakte
+      hain. Apply karne se pehle current terms verify karein.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Application kahan complete hogi?
+    </summary>
+
+    <p>
+      Continue to Online Application button se referral
+      application page open hoga.
+    </p>
+
+  </details>
+
+</section>
+
+
+<!-- DISCLAIMER -->
+
+<section class="section">
+
+  <h2>Important information</h2>
+
+  <p class="disclaimer">
+
+    This is an independent marketing/referral landing page
+    and is not the card issuer.
+
+    We do not guarantee approval, credit limit, cashback,
+    voucher, fee waiver or any other benefit.
+
+    Final eligibility, approval, fees, offers, benefits and
+    documentation are determined by the issuer and applicable
+    application terms.
+
+    Please review the latest terms before submitting an application.
+
+  </p>
+
+</section>
+
+
+</div>
+
+
+<footer>
+
+  Referral application • Terms & Conditions apply •
+  Final decision subject to issuer policy
+
+</footer>
+
+
+<!-- STICKY CTA -->
+
+<div class="sticky">
+
+  <a
+    href="https://sales.gromo.in/ac/hCxUWHMdHF"
+    target="_blank"
+    rel="noopener noreferrer">
+
+    Check Eligibility & Apply Now →
+
+  </a>
+
+</div>
+
+
+<script>
+
+  const answers = {
+    age: null,
+    employment: null,
+    income: null
+  };
+
+
+  document.querySelectorAll(".options").forEach(group => {
+
+    const question = group.dataset.question;
+
+    group.querySelectorAll(".option").forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        group.querySelectorAll(".option")
+          .forEach(btn => btn.classList.remove("selected"));
+
+        button.classList.add("selected");
+
+        answers[question] = button.dataset.value;
+
+        checkEligibility();
+
+      });
+
+    });
+
+  });
+
+
+  function checkEligibility() {
+
+    const result = document.getElementById("result");
+
+    const applyButton =
+      document.getElementById("applyButton");
+
+
+    if (
+      !answers.age ||
+      !answers.employment ||
+      !answers.income
+    ) {
+
+      result.classList.remove("show");
+      applyButton.classList.remove("show");
+
+      return;
+    }
+
+
+    /*
+      Basic pre-check only.
+      It does NOT guarantee bank approval.
+    */
+
+    if (
+      answers.age === "no" ||
+      answers.income === "low"
+    ) {
+
+      result.innerHTML =
+        "Based on these basic answers, the criteria may not match. You can still review the latest eligibility requirements on the application page.";
+
+      result.className = "result show bad";
+
+      applyButton.classList.remove("show");
+
+      return;
+    }
+
+
+    result.innerHTML =
+      "✓ Your basic answers may match the criteria. You can continue to the online application. Final eligibility and approval will be decided by the issuer.";
+
+    result.className = "result show good";
+
+    applyButton.classList.add("show");
+
+  }
+
+</script>
+
+</body>
+</html>
